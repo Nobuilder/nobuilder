@@ -1,0 +1,248 @@
+/*
+*   THIS SOURCE LICENSED BY KIM INCHUL
+*   MAINTAINED & UPDATE   
+*   CONTACT - rdc6087@naver.com   
+*
+*   FLW. MIT LICENSE
+*/
+
+/* ANIMATION BASIC*/
+@import url("animation/basic/flip-2.css");
+@import url("animation/basic/flip-scale-2.css");
+@import url("animation/basic/flip-scale.css");
+@import url("animation/basic/flip.css");
+@import url("animation/basic/rotate-90.css");
+@import url("animation/basic/rotate-scale.css");
+@import url("animation/basic/rotate.css");
+@import url("animation/basic/scale-down.css");
+@import url("animation/basic/scale-up.css");
+@import url("animation/basic/shadow-drop-2.css");
+@import url("animation/basic/shadow-drop.css");
+@import url("animation/basic/shadow-inset.css");
+@import url("animation/basic/shadow-pop.css");
+@import url("animation/basic/slide-bck.css");
+@import url("animation/basic/slide-fwd.css");
+@import url("animation/basic/slide-rotate.css");
+@import url("animation/basic/slide.css");
+@import url("animation/basic/swing.css");
+
+
+/* ANIMATION ENTRANCES*/
+@import url("animation/entraces/bounce-in.css");
+@import url("animation/entraces/fade-in.css");
+@import url("animation/entraces/flicker-in.css");
+@import url("animation/entraces/flip-in.css");
+@import url("animation/entraces/puff-in.css");
+@import url("animation/entraces/roll-in-blurred.css");
+@import url("animation/entraces/roll-in.css");
+@import url("animation/entraces/rotate-in-2.css");
+@import url("animation/entraces/rotate-in.css");
+@import url("animation/entraces/scale-in.css");
+@import url("animation/entraces/slide-in-bck.css");
+@import url("animation/entraces/slide-in-blurred.css");
+@import url("animation/entraces/slide-in-elliptic.css");
+@import url("animation/entraces/slide-in-fwd.css");
+@import url("animation/entraces/slide-in.css");
+@import url("animation/entraces/slit-in.css");
+@import url("animation/entraces/swing-in.css");
+@import url("animation/entraces/swirl-in.css");
+@import url("animation/entraces/tilt-in-fwd.css");
+@import url("animation/entraces/tilt-in.css");
+
+/* ANIMATION ENTRANCES*/
+@import url("animation/exits/bounce-out.css");
+@import url("animation/exits/fade-out.css");
+@import url("animation/exits/flicker-out.css");
+@import url("animation/exits/flip-out.css");
+@import url("animation/exits/puff-out.css");
+@import url("animation/exits/roll-out-blurred.css");
+@import url("animation/exits/roll-out.css");
+@import url("animation/exits/rotate-out-2.css");
+@import url("animation/exits/rotate-out.css");
+@import url("animation/exits/scale-out.css");
+@import url("animation/exits/slide-out-bck.css");
+@import url("animation/exits/slide-out-blurred.css");
+@import url("animation/exits/slide-out-elliptic.css");
+@import url("animation/exits/slide-out-fwd.css");
+@import url("animation/exits/slide-out.css");
+@import url("animation/exits/slit-out.css");
+@import url("animation/exits/swing-out.css");
+@import url("animation/exits/swirl-out.css");
+
+/* ANIMATION TEXT*/
+@import url("animation/text/blur-out.css");
+@import url("animation/text/flicker.css");
+@import url("animation/text/focus-in.css");
+@import url("animation/text/pop-up.css");
+@import url("animation/text/shadow-drop.css");
+@import url("animation/text/shadow-pop.css");
+@import url("animation/text/tracking-in.css");
+@import url("animation/text/tracking-out.css");
+
+/* ANIMATION ATTENTION*/
+@import url("animation/attention/vibrate.css");
+@import url("animation/attention/flicker.css");
+@import url("animation/attention/shake.css");
+@import url("animation/attention/jello.css");
+@import url("animation/attention/wobble.css");
+@import url("animation/attention/bounce.css");
+@import url("animation/attention/pulsate.css");
+@import url("animation/attention/blink.css");
+
+/* ANIMATION BACKGROUND*/
+@import url("animation/background/bg-pan.css");
+@import url("animation/background/color-change.css");
+@import url("animation/background/ken-burns.css");
+
+
+
+/* Button Transition Animation : Press & Hover*/
+@media (max-width: 768px) {
+  #btns {
+    transition: transform 0.5s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+  }
+
+  #btns:active {
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 769px) {
+  #btns {
+    transition: transform 0.2s;
+  }
+
+  #btns:hover {
+    transform: scale(0.97);
+  }
+}
+
+  #btns2 {
+    transition: transform 0.5s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+  }
+
+  #btns2:active {
+    transform: scale(0.9);
+  }
+
+
+/* Lazy Loading - Skeleton */
+#skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+
+  to {
+    background-position: 200% 0;
+  }
+}
+
+/* Blur Style */
+#ten-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#twenty-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+#thirty-blur {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+#fourty-blur {
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+#fifty-blur {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+/* Shadow Text */
+#shadow-text {
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Popup Center */
+#popup-center {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Popup Bottom */
+#popup-bottom {
+  width: 100% !important;
+  max-width: unset !important;
+  bottom: 0px !important;
+  inset: auto auto 0 0 !important;
+}
+
+/* None Click */
+#none-click {
+  pointer-events: none;
+}
+
+
+#overflow-visible {
+    overflow: visible !important;
+}
+#full-height {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+}
+
+#hide-scroll{
+  -ms-overflow-style: none;
+}
+#hide-scroll::-webkit-scrollbar{
+  display:none;
+}
+
+#editor-wrapper img { 
+
+  max-width: 100%; 
+
+  height: auto; 
+
+} 
+
+
+
+.ql-editor { 
+
+font-size: 14px !important; 
+
+font-family: 'Pretendard' !important; 
+
+} 
+
+
+
+#active-click{ 
+
+  pointer-events: auto; 
+
+}
