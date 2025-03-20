@@ -95,6 +95,35 @@
 @import url("animation/background/ken-burns.css");
 
 
+/* Button Transition Animation : Press & Hover*/
+@media (max-width: 768px) {
+  #btns_shadow {
+    transition: transform 0.5s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    box-shadow:  
+      inset 6px 6px 12px 0px #00000014,  
+      6px 6px 12px 0px #0D301633;
+  }
+
+  #btns_shadow:active {
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 769px) {
+  #btns_shadow {
+    transition: transform 0.2s;
+    box-shadow:  
+      inset 6px 6px 12px 0px #00000014,  
+      6px 6px 12px 0px #0D301633;
+  }
+
+  #btns_shadow:hover {
+    transform: scale(0.97);
+  }
+}
 
 /* Button Transition Animation : Press & Hover*/
 @media (max-width: 768px) {
@@ -222,27 +251,19 @@
 }
 
 #editor-wrapper img { 
-
   max-width: 100%; 
-
   height: auto; 
-
 } 
 
 
 
 .ql-editor { 
-
 font-size: 14px !important; 
-
 font-family: 'Pretendard' !important; 
-
 } 
 
 
 
 #active-click{ 
-
   pointer-events: auto; 
-
 }
